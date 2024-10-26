@@ -1,1 +1,1 @@
-# Dot-MatrixLED-TM1628A
+# 10×7ドットマトリックスLEDモジュール（TM1628A)  
