@@ -6,7 +6,9 @@ https://massa4649.booth.pm/items/6223956 の製品説明となります。
 TM1626AをLEDドライバとして実装した汎用的に使用できる10×7ドットマトリックスLEDディスプレイモジュールです。   
 筐体への固定用ネジ穴（Φ３ｍｍ）を４つ設けています。  
 
+【LED実装面】  
 ![omote1](https://github.com/user-attachments/assets/8b613744-a243-4c68-8b66-2ef13d9506a6)  
+【IC実装面】  
 ![ura](https://github.com/user-attachments/assets/dba3b079-3ac5-4c19-b819-b0250c426493)  
 
 ## 仕様  
@@ -16,17 +18,25 @@ TM1626AをLEDドライバとして実装した汎用的に使用できる10×7�
 ・LED色   ：赤色(STANLEY製）  
 ・搭載LEDドライバーIC：TM1628A(TITAN MICRO ELECTRONICS)  
 ・ピンヘッダー（L型 1x5)：１個同梱（未実装）   
+・ピンヘッダー（ストレート型 1x5)：１個同梱（未実装）   
 
+※ピンヘッダーはどちら一方（またはご自身で用意した物）を、お好きな取り付け方向で半田付けして下さい。  
 ※ロットにより、部品名称や色あい、細かいデザインや形が微妙に変わることがあります。  
 
-## 回路図  
+【LED未実装品】をご購入した場合  
+  MATRIX　LEDはご自身で半田付けする必要があります。  
+  LED D1およびD2の半田付け方向は、次の写真の通りです。  
+  LEDの印字方向をよく確認して間違えないように半田付けをお願いします。  
+![MATRIX-direction-30per](https://github.com/user-attachments/assets/5489bcb1-e060-4da9-89ee-9b04e39be6ca)
+
+## 参考回路図  
 ![circuit](https://github.com/user-attachments/assets/abdf0add-3d86-4d39-b122-b65f4f6e194d)  
 
-・2024年10月現在においては、TM1628AのデータシートはArduino.CCで紹介されているライブラリの添付資料として提供されていますのでご参照下さい。  
+・2024年10月現在において、TM1628AのデータシートはArduino.CCで紹介されているライブラリの添付資料として提供されていますのでご参照下さい。  
   参照サイト：https://docs.arduino.cc/libraries/tm16xx-leds-and-buttons/  
 
 ## 動作確認  
-・上記Arduino.CCのサイトにリンクされているrepositoryにライブラリが提供されていてその中のサンプルスケッチを使用しました。  
+・上記Arduino.CCのサイトからリンク先repositoryで提供されているライブラリに含まれるサンプルスケッチを使用しました。  
 
 ```
 #include <Adafruit_GFX.h>
